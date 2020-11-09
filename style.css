@@ -6,7 +6,7 @@
 /*   border:solid 1px red; */
 font-family: "Dancing Script",'Noto Sans TC',sans-serif;
 
-
+background-size:100%;
 }
 /* .navbar-nav
 {
@@ -22,7 +22,7 @@ font-family: "Dancing Script",'Noto Sans TC',sans-serif;
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
-  color: white;
+  color:BLACK;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
