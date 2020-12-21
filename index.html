@@ -2,12 +2,13 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Rebirth六版O</title>
+  <title>CodePen - Rebirth伍版</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <style>
@@ -20,7 +21,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  
 </head>
 <body>
 
@@ -29,40 +29,7 @@
 <!--   放置遊戲標誌跟遊戲名稱 -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
-    
-<!--     音樂相關 -->
   </button>
-<button onclick="getVolume()" type="button">What is the volume?</button>
-<button onclick="setHalfVolume()" type="button">Set volume to 0.2</button>
-<button onclick="setFullVolume()" type="button">Set volume to 1.0</button>
-    <audio id="theme" loop src="https://groundgrey.github.io/Rebirth/Title%2001.wav"></audio>
-    
-    <audio id="gasp" src="https://raw.githubusercontent.com/bradtraversy/50projects50days/master/sound-board/sounds/gasp.mp3"></audio>
-
-
-
-    <audio id="end" src="https://raw.githubusercontent.com/bradtraversy/50projects50days/master/sound-board/sounds/wrong.mp3"></audio>
-
-    <div id="buttons"></div>
-<script>
-var vid = document.getElementById("theme");
-
-function getVolume() { 
-  alert(vid.volume);
-} 
-  
-function setHalfVolume() { 
-  vid.volume = 0.2;
-} 
-  
-function setFullVolume() { 
-  vid.volume = 1.0;
-} 
-</script> 
-    <script src="script.js"></script>
-
-  <!--     音樂相關 -->
-</div>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
@@ -130,7 +97,7 @@ function setFullVolume() {
 <!--           佔多少版面的意思 -->
 
                        <div class= "SpaceNone">
-<p align="center"><img src="https://i.imgur.com/zxn99EI.jpg" class="img-fluid" alt="Responsive image" width="150%" height="100%"></div>
+<p align="center"><img src="https://i.imgur.com/zxn99EI.jpg" class="img-fluid" alt="Responsive image" width="75%" height="100%"></div>
 <!--           
           留白 -->
       <div class="col-sm-1">
@@ -216,6 +183,7 @@ function setFullVolume() {
 
 <br>　　對生活在周而復始氾濫的尼羅河旁的埃及人來說，太陽既是光明溫暖的象徵，更是讓作物茂盛生長的寶物，而拉神也同時被認為是代表天空和風的舒神與代表雨的泰芙努特女神的父親。因此太陽神的地位便更加崇高。<br>
 
+<br>　　據傳說，拉神在白天和夜晚分別乘坐二艘專屬的太陽船航行。這些船載著他穿行在天空和冥界「杜亞特」"Duat"，目的是讓太陽能夠不斷地循環運行，而太陽也不負眾望的每日升起––除了日蝕發生的那天。作為信奉太陽神的古埃及人，認為可能是邪神阿佩普將太陽神拉的船所摧毀，才會造成太陽久未升起的現象。<br>
 
 <br>　　在古埃及有著太陽神拉專屬的冥界穿越書，描述了太陽神每日所經歷的旅途，此書影響甚遠，有些法老們則將之稍加修改便納為己用，期盼完成與太陽神拉同樣的重生之旅，而貴族名門也發展出類似的書，以求度過冥界的各種危險重獲新生。
 <br>
@@ -656,13 +624,12 @@ function setFullVolume() {
             <div data-aos="zoom-in">
             <h1><p align="center">遊戲影片欄位</h1>
             <hr/>
-              
-          <div class="col-sm-12">
-<div class=video-container>
-        
-        <iframe  src="https://www.youtube.com/embed/vxbGXo1-ygI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<!--           <div class="col-sm-12"><div class=video-container>，
+
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/vxbGXo1-ygI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         </div>
-      </div></div>
+      </div></div> -->
       
     </section>
     <section id="s4">
@@ -674,10 +641,6 @@ function setFullVolume() {
             <hr/>
 
           <div class="col-sm-12">
-           <div class="module module-home-video">
-    <div id="video"></div>
-</div>
-
 <!--             <a href="https://www.facebook.com/DEDMADCAMP/" target="blank">連結點 -->
             
 <!--             <h3><p align="center">雲端連結<span class="badge badge-warning">windows</span></h3> -->
@@ -775,42 +738,12 @@ $(function(){
 	}).scroll();
 });
 </script>
-      
 </body>
-<script src="https://www.youtube.com/iframe_api"></script>
-<script>
-    var player, playing = false;
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('video', {
-            videoId: 'vxbGXo1-ygI',
-            fitToBackground:true,
-            height: '100%',
-            width: '100%',
-            events: {
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    }
 
-    function onPlayerStateChange(event) {
-
-      if (event.data == YT.PlayerState.PLAYING) {
-         alert('video started');
-         playing = true;
-        }
-
-      else if(event.data == YT.PlayerState.PAUSED){
-            alert('video paused');
-            playing = false;
-       }
-}
-</script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script
 src="https://unpkg.com/aos@2.3.1/dist
 /aos.js"></script>
-
-        
 </html>
 <!-- partial -->
   <script  src="./script.js"></script>
