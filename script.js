@@ -25,6 +25,7 @@ sounds.forEach((sound) => {
 function stopSounds() {
   sounds.forEach((sound) => {
     const audio = document.getElementById(sound);
+    audio.volume = 0.5;
     audio.pause();
     audio.currentTime = 0;
   });

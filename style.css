@@ -10,6 +10,10 @@
 {
   margin-left:100px;
 } */
+.bg-color {
+  background-color: rgba(204, 119, 34, 0.8);
+  box-shadow: 0rem 0.5rem 5rem 0rem black;
+}
 .container {
   padding-top: 0px;
   padding-bottom: 0px;
