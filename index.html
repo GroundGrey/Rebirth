@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Rebirth</title>
+  <title>CodePen - Rebirth六版O</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -24,31 +24,31 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md bg-green navbar-light fixed-top">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
 <!--   <a class="navbar-brand" href="#"><img src="https://qaayy444.github.io/img/logo_13.png" width=80px alt="NCYU_LOGO">Rebirth</a> -->
 <!--   放置遊戲標誌跟遊戲名稱 -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
     
 <!--     音樂相關 -->
-      
-
   </button>
-<button onclick="getVolume()" type="button" style="background-color:gray;color:white;">MUSIC STOP</button>
-<button onclick="setHalfVolume()" type="button">Volume down</button>
-<button onclick="setFullVolume()" type="button">Volume loud</button>
-    <audio id="Rebirth" loop src="https://groundgrey.github.io/Rebirth/Title%2001.wav" ></audio>
+<button onclick="getVolume()" type="button">What is the volume?</button>
+<button onclick="setHalfVolume()" type="button">Set volume to 0.2</button>
+<button onclick="setFullVolume()" type="button">Set volume to 1.0</button>
+    <audio id="theme" loop src="https://groundgrey.github.io/Rebirth/Title%2001.wav"></audio>
+    
+    <audio id="gasp" src="https://raw.githubusercontent.com/bradtraversy/50projects50days/master/sound-board/sounds/gasp.mp3"></audio>
 
+
+
+    <audio id="end" src="https://raw.githubusercontent.com/bradtraversy/50projects50days/master/sound-board/sounds/wrong.mp3"></audio>
 
     <div id="buttons"></div>
 <script>
-var vid = document.getElementById("Rebirth");
+var vid = document.getElementById("theme");
 
 function getVolume() { 
-  /*顯示當前音量值*/
-  // alert(vid.volume);
-  /*顯示當前音量值*/
-  vid.volume = 0;
+  alert(vid.volume);
 } 
   
 function setHalfVolume() { 
@@ -654,23 +654,14 @@ function setFullVolume() {
         <div class="row">
           <div class="col-sm-12">
             <div data-aos="zoom-in">
-            <h1><p align="center">遊戲影片欄位(影片待替換)
-              </h1><p align="center">效果測試用影片，正式版網頁將放上遊戲遊玩影片
+            <h1><p align="center">遊戲影片欄位</h1>
             <hr/>
               
           <div class="col-sm-12">
-<!--             無法停下音樂的影片 -->
-<!-- <div class=video-container>
+<div class=video-container>
         
         <iframe  src="https://www.youtube.com/embed/vxbGXo1-ygI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-        </div> -->
-            <!--             無法停下音樂的影片 -->
-                         <div class="module module-home-video">
-    <div id="video"></div>
-             <div id="video2"></div>
-</div>
-              
+        </div>
       </div></div>
       
     </section>
@@ -683,11 +674,13 @@ function setFullVolume() {
             <hr/>
 
           <div class="col-sm-12">
-
+           <div class="module module-home-video">
+    <div id="video"></div>
+</div>
 
 <!--             <a href="https://www.facebook.com/DEDMADCAMP/" target="blank">連結點 -->
             
-            <h3><p align="center">雲端連結<span class="badge badge-warning">windows尚未開放下載)</span></h3>
+<!--             <h3><p align="center">雲端連結<span class="badge badge-warning">windows</span></h3> -->
             
 <!--             <img src="https://qaayy444.github.io/img/71810269_573239000081873_7800007831872077824_o.jpg" class="img-fluid" alt=""></a> 看要不要放遊戲照片 -->
           </div>
@@ -786,39 +779,31 @@ $(function(){
 </body>
 <script src="https://www.youtube.com/iframe_api"></script>
 <script>
-    var player,player2, playing = false;
-   var music=document.getElementById("Rebirth"); 
+    var player, playing = false;
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('video', {
             videoId: 'vxbGXo1-ygI',
-          // 網址
             fitToBackground:true,
-            height: '400',
+            height: '100%',
             width: '100%',
             events: {
                 'onStateChange': onPlayerStateChange
             }
         });
-      
     }
 
     function onPlayerStateChange(event) {
 
       if (event.data == YT.PlayerState.PLAYING) {
-         //alert('video started');
-        StopMusic();
+         alert('video started');
          playing = true;
         }
 
       else if(event.data == YT.PlayerState.PAUSED){
-            //alert('video paused');
+            alert('video paused');
             playing = false;
        }
 }
-  function StopMusic()
-  {
-    music.pause();
-  }
 </script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script

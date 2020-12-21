@@ -4,14 +4,13 @@ AOS.init();
 
 //音樂相關
 
-
-const sounds = ['Rebirth',]
+const sounds = ['theme', 'gasp', 'end']
 
 sounds.forEach(sound => {
     const btn = document.createElement('button');
     btn.classList.add('btn');
     btn.innerText = sound;
-    btn.style.display = 'block';
+
     btn.addEventListener('click', () => {
         stopSounds();
 
@@ -24,11 +23,11 @@ sounds.forEach(sound => {
 function stopSounds() {
     sounds.forEach(sound => {
         const audio = document.getElementById(sound);
-      audio.volume = 0.5;
         audio.pause();
         audio.currentTime = 0;
     })
 }
+
 //音樂相關
 
 

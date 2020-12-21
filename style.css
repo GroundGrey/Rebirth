@@ -7,41 +7,11 @@
 font-family: "Dancing Script",'Noto Sans TC',sans-serif;
 
 background-size:100%;
-      
 }
-/* .audio {
-    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
-    width: 200px;
-    height: 25px;
-} */
 /* .navbar-nav
 {
   margin-left:100px;
 } */
-.navbar{
-font-size:100%;
-  background-color:rgba(204,119,34,0.6);
-  box-shadow: 0px 7px 30px 0px #000;
-  text-align: center; /* 文字文平置中 */
-font-weight: bold; /* 粗體字 */
-}
-/* }
-.bg-green{
-  background-color:rgba(204,119,34,0.8);
-    box-shadow: 0px 7px 30px 0px #000;
-} */
-
-.btn {
-  display: block;
-    background-color: black;
-    border-radius: 1px;
-    border: none;
-    color: white;
-    margin: 1rem;
-    padding: 1.5rem 1rem;
-    font-size: 1.2rem;
-  z-index:1;
-}
 .container
 {
   padding-top:0px;
@@ -49,17 +19,27 @@ font-weight: bold; /* 粗體字 */
   margin-bottom:0px;
   margin-top:0px;
 }
-
-/* .button {
+.button {
   background-color: #4CAF50; /* Green */
-/*   border: none;
+  border: none;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+}
+.buttons {
+  background-color: red /* Green */
+  border: none;
   color:BLACK;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-} */ 
+}
 .carousel-item
 {
   padding-top:30px;
