@@ -1,11 +1,11 @@
 $(document).ready(function () {
   $(".title").attr({
     "data-aos": "zoom-in",
-    "data-aos-duration": "2000"
+    "data-aos-duration": "200"
   });
   setTimeout(() => {
     AOS.init();
-  }, 120);
+  }, 50);
 });
 const sounds = ["Rebirth"];
 sounds.forEach((sound) => {

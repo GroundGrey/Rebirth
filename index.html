@@ -37,12 +37,13 @@
       <!--     音樂相關 -->
 
     </button>
-    <button onclick="getVolume()" type="button" style="background-color:gray;color:white;">MUSIC STOP</button>
-    <button onclick="setHalfVolume()" type="button">Volume down</button>
-    <button onclick="setFullVolume()" type="button">Volume loud</button>
-    <audio id="Rebirth" loop src="https://groundgrey.github.io/Rebirth/Title%2001.wav"></audio>
 
-    <div id="buttons"></div>
+    <button onclick="getVolume()" type="button" class="btn btn-warning btn-sm">&#9744;</button>
+    <button onclick="setHalfVolume()" type="button" class="btn btn-warning btn-sm">&#9836;&darr;</button>
+    <button onclick="setFullVolume()" type="button" class="btn btn-warning btn-sm">&#9836;&uarr;</button>
+    <button type="button" class="btn btn-warning btn-sm"><audio id="Rebirth" loop src="https://groundgrey.github.io/Rebirth/Title%2001.wav"></audio>
+      <div id="buttons">&#9836;</div>
+    </button>
     <script>
       var vid = document.getElementById("Rebirth");
 
