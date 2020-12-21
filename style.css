@@ -32,6 +32,7 @@ font-weight: bold; /* 粗體字 */
 } */
 
 .btn {
+  display: block;
     background-color: black;
     border-radius: 1px;
     border: none;
