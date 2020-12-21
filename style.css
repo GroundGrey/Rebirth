@@ -31,7 +31,7 @@ font-weight: bold; /* 粗體字 */
     box-shadow: 0px 7px 30px 0px #000;
 } */
 
-/* .btn {
+.btn {
     background-color: black;
     border-radius: 1px;
     border: none;
@@ -40,7 +40,7 @@ font-weight: bold; /* 粗體字 */
     padding: 1.5rem 1rem;
     font-size: 1.2rem;
   z-index:1;
-} */
+}
 .container
 {
   padding-top:0px;
