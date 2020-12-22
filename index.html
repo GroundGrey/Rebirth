@@ -38,10 +38,10 @@
 
     </button>
 
-    <button onclick="getVolume()" type="button" class="btn btn-warning btn-sm">&#9744;</button>
-    <button onclick="setHalfVolume()" type="button" class="btn btn-warning btn-sm">&#9836;&darr;</button>
-    <button onclick="setFullVolume()" type="button" class="btn btn-warning btn-sm">&#9836;&uarr;</button>
-    <button type="button" class="btn btn-warning btn-sm"><audio id="Rebirth" loop src="https://groundgrey.github.io/Rebirth/Title%2001.wav"></audio>
+    <button onclick="getVolume()" type="button" class="btn1 btn-warning btn-sm">&#9744;</button>
+    <button onclick="setHalfVolume()" type="button" class="btn1 btn-warning btn-sm">&#9836;&darr;</button>
+    <button onclick="setFullVolume()" type="button" class="btn1 btn-warning btn-sm">&#9836;&uarr;</button>
+    <button type="button" class="btn1 btn-warning btn-sm"><audio id="Rebirth" loop src="https://groundgrey.github.io/Rebirth/Title%2001.wav"></audio>
       <div id="buttons">&#9836;</div>
     </button>
     <script>
@@ -384,7 +384,7 @@
 
             <br>　　歐西里斯的屍體被切成許多塊。伊西絲與她的姐妹奈芙蒂斯找回了這些碎片，並把它們做成蠟像交給祭司們膜拜。拉命令阿努比斯和圖特把歐西里斯做成木乃伊，這就是第一個木乃伊，而後伊西絲使他復活。<br>
 
-            <br>　從此以後，歐西里斯便留在陰間審判死者的靈魂。在陰間Duat，歐西里斯將死者的靈魂與真理羽毛放在天平上作比較。由於罪孽而變重的靈魂會被阿米特吞噬，而那些輕的靈魂則會得到祂的許可，得以進入Aaru。<br><br>
+            <br>　　從此以後，歐西里斯便留在陰間審判死者的靈魂。在陰間Duat，歐西里斯將死者的靈魂與真理羽毛放在天平上作比較。由於罪孽而變重的靈魂會被阿米特吞噬，而那些輕的靈魂則會得到祂的許可，得以進入Aaru。<br><br>
 
           </div>
           <!--     摺疊 -->
@@ -708,9 +708,15 @@
               <!--             <a href="https://www.facebook.com/DEDMADCAMP/" target="blank">連結點 -->
 
               <h3>
-                <p align="center">雲端連結<span class="badge badge-warning">windows尚未開放下載)</span>
+                <a href="https://drive.google.com/file/d/1fgPrSv3MbaIll7hmMor0XON1lL5Zru6d/view?usp=sharing" target="blank">
+                  <p align="center">雲端連結<span class="badge badge-warning">windows</span>
+                </a>
               </h3>
-
+              <h3>
+                <a href="https://drive.google.com/file/d/18sRJZowI7Hh8eodaB8vFuuhMSfug5CmA/view?usp=sharing" target="blank">
+                  <p align="center">雲端連結<span class="badge badge-warning">MAC</span>
+                </a>
+              </h3>
               <!--             <img src="https://qaayy444.github.io/img/71810269_573239000081873_7800007831872077824_o.jpg" class="img-fluid" alt=""></a> 看要不要放遊戲照片 -->
             </div>
             <div class="col-sm-12">
@@ -820,7 +826,7 @@
 
   function onYouTubeIframeAPIReady() {
     player = new YT.Player('video', {
-      videoId: 'vxbGXo1-ygI',
+      videoId: 'gVXpsFzFPwo',
       // 網址
       fitToBackground: true,
       height: '400',
@@ -846,6 +852,19 @@
     music.pause();
   }
 </script>
+
+<script>
+  $(".btn").click(function() {
+    if ($(this).text() === '收起') {
+      $('input').show();
+      $(this).text('展開');
+    } else {
+      $('input').hide();
+      $(this).text('收起');
+    }
+  });
+</script>
+
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist
 /aos.js"></script>
