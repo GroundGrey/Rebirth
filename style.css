@@ -3,12 +3,15 @@
 * {
   /*   border:solid 1px red; */
   font-family: "Dancing Script", "Noto Sans TC", sans-serif;
-
+  /*   cursor: url("https://groundgrey.github.io/Rebirth/cursor.cur"), default; */
   background-size: 100%;
 }
 /* .navbar-nav
 {
   margin-left:100px;
+} */
+/* .mymouse {
+    cursor: help;
 } */
 .bg-color {
   background-color: rgba(204, 119, 34, 0.8);
